@@ -183,7 +183,7 @@ fun Middle(todo : List<Todos>, viewModel: FocusViewModel) {
 @Composable
 fun FocusList(todos: Todos){
     Card(modifier = Modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(containerColor = Color(0XFFD6E4FF)),
+        colors = CardDefaults.cardColors(containerColor = Color(0xFFE3F2FD)),
         shape = RoundedCornerShape(10.dp),
 
         elevation = CardDefaults.cardElevation(4.dp)){
@@ -211,6 +211,8 @@ fun FocusList(todos: Todos){
             }
         }
     }
+
+    Spacer(Modifier.height(20.dp))
 }
 
 @Composable
@@ -218,7 +220,7 @@ fun Bottom() {
     Row(Modifier.fillMaxSize(),
         verticalAlignment = Alignment.Bottom) {
         Row(
-            Modifier.fillMaxWidth()
+            Modifier.fillMaxWidth().background(Color.White)
                 .padding(16.dp),
             horizontalArrangement = Arrangement.SpaceEvenly,
             verticalAlignment = Alignment.CenterVertically
